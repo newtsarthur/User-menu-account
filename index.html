@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Menu User account</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="img/jpg" href="https://steamuserimages-a.akamaihd.net/ugc/925919905791817402/CEE8C7C38A2284BA4C44ACC7C41F507937D2ADDD/"></link>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="action">
+        <div class="profile" onclick="menuToggle()">
+            <img class="imageprofile" src="./img/me.jpg">
+        </div>
+        <div class="menuprofile">
+            <h3>Your name<br><span>Front-end designer</span></h3>
+            <ul>
+                <li><img class="iconsmenu" src="./img/iconprofile.png"><a href="#">My profile</a></li>
+                <li><img class="iconsmenu" src="./img/iconedit.png"><a href="#">Edit profile</a></li>
+                <li><img class="iconsmenu" src="./img/iconemail.png"><a href="#">Inbox</a></li>
+                <li><img class="iconsmenu" src="./img/iconsettings.png"><a href="#">Settings</a></li>
+                <li><img class="iconsmenu" src="./img/iconhelp.png"><a href="#">Help</a></li>
+                <li><img class="iconsmenu" src="./img/iconlogout.png"><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.menuprofile');
+            toggleMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
